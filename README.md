@@ -1,5 +1,4 @@
 # Download shapefiles from gadm.org
-![Screenshot](https://github.com/unicef/download_shapefiles_from_gadm/blob/master/public/images/dl_gadm.png)
 
 #### This is a component of Magic Box
 
