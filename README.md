@@ -1,6 +1,6 @@
 # Download shapefiles from gadm.org
 
-#### This is a component of Magic Box
+#### This is a component of [Magic Box](https://github.com/unicef/magicbox/wiki)
 
 This repository downloads all zipped shape files from gadm.org to:
 
