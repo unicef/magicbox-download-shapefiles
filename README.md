@@ -10,6 +10,11 @@ and unzips them to:
 
 	./data/shapefiles/gadm2-8/
 
+### Dependencies:
+#### NVM
+	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
+#### Node.js
+	nvm install 8
 #### Setup
 	git clone https://github.com/unicef/download_shapefiles_from_gadm.git
 	cd download_shapefiles_from_gadm
