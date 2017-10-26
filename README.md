@@ -18,6 +18,7 @@ and unzips them to:
 #### Setup
 	git clone https://github.com/unicef/download_shapefiles_from_gadm.git
 	cd download_shapefiles_from_gadm
+	npm install
 	cp config-sample.js config.js
 	bash setup.sh
     node main.js
