@@ -9,7 +9,7 @@ FROM centos:latest
 LABEL maintainer="Justin W. Flory <jflory@unicef.org>" \
       vendor="UNICEF Office of Innovation"
 
-WORKDIR /root
+WORKDIR /app
 
 RUN yum upgrade -y \
     && yum install -y \
@@ -23,12 +23,10 @@ RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum install -y nodejs
 
 # Set up coordinate_to_admin_id_server
-RUN git clone https://github.com/unicef/download_shapefiles_from_gadm.git \
-    && cd download_shapefiles_from_gadm \
-    && npm install \
-    && bash setup.sh
-
+RUN     git clone https://github.com/unicef/download_shapefiles_from_gadm.git
 WORKDIR download_shapefiles_from_gadm
-COPY config.js .
+RUN     npm install \
+        && mkdir -p data/{shapefiles,zipfiles}
+COPY    config.js .
 
 ENTRYPOINT ["node", "main.js"]
