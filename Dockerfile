@@ -23,8 +23,8 @@ RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum install -y nodejs
 
 # Set up coordinate_to_admin_id_server
-RUN     git clone https://github.com/unicef/download_shapefiles_from_gadm.git
-WORKDIR download_shapefiles_from_gadm
+RUN     git clone https://github.com/unicef/magicbox-download-shapefiles.git
+WORKDIR magicbox-download-shapefiles
 RUN     npm install \
         && mkdir -p data/{shapefiles,zipfiles}
 COPY    config.js .
