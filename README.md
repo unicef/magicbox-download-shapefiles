@@ -39,6 +39,12 @@ review the Docker documentation first.
 
 ### Build image, create volume
 
+Create a config.js file based in config-sample.js
+
+```bash
+cp config-sample.js config.js
+```
+
 Build this image locally on your machine with this command.
 
 ```bash
@@ -62,7 +68,7 @@ Now you can run the image. Start up the image with this command (it will use the
 volume we created in the previous step to hold the data).
 
 ```bash
-docker run --rm -it -v shapefile_dbvolume:/app/download_shapefiles_from_gadm/data:z unicef/download-shapefiles
+docker run --rm -it -v shapefiles_dbvolume:/app/magicbox-download-shapefiles/data:z unicef/download-shapefiles
 ```
 
 You should see output like this:
