@@ -59,7 +59,7 @@ containers. We'll use it again later in the
 repo.
 
 ```bash
-docker volume create shapefiles_dbvolume
+docker volume create --name shapefiles_dbvolume
 ```
 
 ### Run image
