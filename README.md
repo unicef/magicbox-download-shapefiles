@@ -1,6 +1,7 @@
 magicbox-download-shapefiles
 ============================
 
+[![Chat on Gitter](https://badges.gitter.im/unicef-innovation-dev/Lobby.png)](https://gitter.im/unicef-innovation-dev/Lobby)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 **Component of [MagicBox](https://github.com/unicef/magicbox)**
