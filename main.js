@@ -16,7 +16,7 @@ let temp_storage = config.zipfile_dir;
 let shapefile_dir = config.shapefile_dir;
 let shapefiles_url = config.shapefile_url;
 
-let source = 'gadm2-8';
+let source = 'gadm3-6';
 
 shapefile_dir = config.shapefile_dir + source
 
@@ -44,7 +44,8 @@ bluebird.each(country_codes, function(e) {
  */
 function download_shapefile_then_unzip(country_code) {
   return new Promise((resolve, reject) => {
-    let url = shapefiles_url + country_code + '_adm_shp.zip';
+    let url = shapefiles_url + country_code + '_shp.zip';
+    console.log(url)
     let output = temp_storage + country_code + '.zip';
     console.log('Downloading', country_code);
     request({
