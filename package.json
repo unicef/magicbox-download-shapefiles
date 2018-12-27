@@ -11,6 +11,8 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "extract-zip": "1.6.0",
+    "geojson2csv": "^0.1.1",
+    "json2csv": "^4.3.2",
     "mkdirp": "^0.5.1",
     "request": "^2.83.0"
   },
