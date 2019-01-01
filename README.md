@@ -26,7 +26,7 @@ This downloads zipped shapefiles from GADM to:
 
 …and unzips them to:
 
-`./data/shapefiles/gadm2-8/`
+`./data/shapefiles/gadm3-6/`
 
 
 ## Installation
